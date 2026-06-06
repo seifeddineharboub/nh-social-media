@@ -134,9 +134,9 @@ function applyLang(lang){
 
 // Wrap each letter of "votre marque" so the outline can be re-drawn letter by letter
 function brandGradColor(t){
-  const stops=[[224,122,95,0],[210,84,138,.55],[181,70,143,1]]; // #e07a5f → #d2548a → #b5468f
+  const stops=[[192,136,92,0],[176,142,116,.5],[154,134,107,1]]; // #c0885c → #b08e74 → #9a866b
   let a=stops[0], b=stops[1];
-  if(t>0.55){ a=stops[1]; b=stops[2]; }
+  if(t>0.5){ a=stops[1]; b=stops[2]; }
   const seg=(t-a[3])/(b[3]-a[3]);
   return `rgb(${Math.round(a[0]+(b[0]-a[0])*seg)},${Math.round(a[1]+(b[1]-a[1])*seg)},${Math.round(a[2]+(b[2]-a[2])*seg)})`;
 }
@@ -368,6 +368,19 @@ if(fine){
   }
   size();
   addEventListener("resize", size, {passive:true});
+})();
+
+/* ========= REELS AUTO-SCROLL (mobile/tablet) — duplicate for seamless loop ========= */
+(function reelLoop(){
+  const wall=document.querySelector(".reel-wall"); if(!wall) return;
+  [...wall.children].forEach(r=>{
+    r.classList.add("visible"); // always shown (the row scrolls on its own)
+    const cl=r.cloneNode(true);
+    cl.classList.add("reel-clone","visible");
+    cl.classList.remove("reveal");
+    cl.setAttribute("aria-hidden","true");
+    wall.appendChild(cl);
+  });
 })();
 
 /* ========= IMAGE FALLBACK (never look broken) ========= */
