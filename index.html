@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NH Social Media — Agence Social Marketing</title>
+  <meta name="description" data-i18n="meta.desc" content="Agence de social marketing : gestion des ads, création de contenu et community management pour Instagram, TikTok et Facebook." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a class="brand" href="#hero">
+      <svg class="brand-logo" viewBox="0 0 72 72" aria-hidden="true">
+        <rect x="4" y="4" width="64" height="64" rx="18" fill="#f4ece3"/>
+        <circle cx="15" cy="15" r="1.9" fill="#e88a72"/><circle cx="57" cy="15" r="1.9" fill="#e88a72"/>
+        <circle cx="15" cy="57" r="1.9" fill="#e88a72"/><circle cx="57" cy="57" r="1.9" fill="#e88a72"/>
+        <text x="24" y="46" font-family="Sora,sans-serif" font-weight="700" font-size="27" fill="#4a3f36" text-anchor="middle">N</text>
+        <line x1="36" y1="24" x2="36" y2="50" stroke="#c9a07d" stroke-width="1"/>
+        <text x="48" y="46" font-family="Sora,sans-serif" font-weight="700" font-size="27" fill="#4a3f36" text-anchor="middle">H</text>
+      </svg>
+      <span class="brand-name">NH Social Media</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#work" data-i18n="nav.work">Réalisations</a>
+      <a href="#platforms" data-i18n="nav.platforms">Plateformes</a>
+      <a href="#content" data-i18n="nav.content">Contenus</a>
+      <a href="#pricing" data-i18n="nav.pricing">Offres</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-switch" id="langSwitch" role="group" aria-label="Language">
+        <button data-lang="fr" class="active">FR</button>
+        <button data-lang="en">EN</button>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-sm magnetic" data-i18n="nav.cta">Démarrer</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-copy">
+        <span class="pill reveal" data-i18n="hero.pill">✦ Agence Social Marketing 360°</span>
+        <h1 class="hero-title">
+          <span class="reveal" data-i18n="hero.title1">On transforme</span>
+          <span class="reveal tl-mark" data-i18n="hero.title2">votre marque</span>
+          <span class="reveal gradient-text" data-i18n="hero.title3">en phénomène social.</span>
+        </h1>
+        <p class="hero-sub reveal" data-i18n="hero.sub">
+          Ads, création de contenu &amp; community management sur Instagram, TikTok et Facebook.
+          Des Reels qui captivent, des campagnes qui convertissent.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#contact" class="btn btn-primary magnetic" data-i18n="hero.cta1">Lancer ma croissance</a>
+          <a href="#work" class="btn btn-ghost magnetic" data-i18n="hero.cta2">▶ Voir le showreel</a>
+        </div>
+        <div class="hero-trust reveal">
+          <div class="avatars"><span></span><span></span><span></span><span></span></div>
+          <p data-i18n="hero.trust">+120 marques · 4,9/5 de satisfaction</p>
+        </div>
+      </div>
+
+      <!-- Hero visual: live phone + scattered media -->
+      <div class="hero-stage">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ptrack">
+
+              <!-- 1 · Vue Instagram (feed) -->
+              <section class="pslide ig-feed">
+                <div class="igf-top"><b>Instagram</b><span>♡ ✈</span></div>
+                <div class="igf-stories">
+                  <span class="igst new"><i></i>vous</span>
+                  <span class="igst"><i></i>promo</span>
+                  <span class="igst"><i></i>news</span>
+                  <span class="igst"><i></i>avis</span>
+                </div>
+                <div class="igp-head"><span class="p-ava"></span><b>votre.marque</b><small>· Sponsorisé</small></div>
+                <div class="igp-media" style="background-image:url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=500&q=80')"></div>
+                <div class="igp-actions"><span>♥</span><span>💬</span><span>✈</span><b class="save">⤓</b></div>
+                <div class="igp-likes">1 248 j'aime</div>
+                <div class="igp-cap"><b>votre.marque</b> Nouvelle collection ✨</div>
+              </section>
+
+              <!-- 2 · Vue Story Instagram -->
+              <section class="pslide ig-story" style="background-image:url('https://images.unsplash.com/photo-1610128114197-485d933885c5?auto=format&fit=crop&w=600&q=80')">
+                <div>
+                  <div class="st-bars"><i class="on"></i><i></i><i></i></div>
+                  <div class="st-head"><span class="p-ava"></span><b>votre.marque</b><small>3 h</small><span class="x">✕</span></div>
+                </div>
+                <span class="st-cta">Voir la boutique →</span>
+                <div class="st-foot"><span class="reply">Envoyer un message…</span><span>♡</span><span>✈</span></div>
+              </section>
+
+              <!-- 3 · Profil + stories permanentes -->
+              <section class="pslide ig-profile">
+                <div class="prof-top"><b>votre.marque</b><span>☰</span></div>
+                <div class="prof-head">
+                  <span class="prof-ava"></span>
+                  <div class="prof-stats">
+                    <div><b>248</b><small>posts</small></div>
+                    <div><b>32k</b><small>abonnés</small></div>
+                    <div><b>180</b><small>suivis</small></div>
+                  </div>
+                </div>
+                <div class="prof-bio"><b>Votre Marque</b><p>Social marketing ✦ Paris<br>On fait grandir votre présence.</p></div>
+                <div class="prof-hl">
+                  <span class="hl"><i>＋</i>Nouveau</span>
+                  <span class="hl"><i style="background-image:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=120&q=60')"></i>Avis</span>
+                  <span class="hl"><i style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=120&q=60')"></i>FAQ</span>
+                  <span class="hl"><i style="background-image:url('https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=120&q=60')"></i>Promo</span>
+                </div>
+                <div class="prof-grid">
+                  <i style="background-image:url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=200&q=60')"></i>
+                  <i style="background-image:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=200&q=60')"></i>
+                  <i style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=200&q=60')"></i>
+                  <i style="background-image:url('https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=200&q=60')"></i>
+                  <i style="background-image:url('https://images.unsplash.com/photo-1610128114197-485d933885c5?auto=format&fit=crop&w=200&q=60')"></i>
+                  <i style="background-image:url('https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=200&q=60')"></i>
+                </div>
+              </section>
+
+              <!-- 4 · Vue TikTok -->
+              <section class="pslide tk" style="background-image:url('https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=600&q=80')">
+                <div class="tk-top"><span>Abonnements</span><b>Pour toi</b></div>
+                <div class="tk-rail">
+                  <span class="tk-ava"></span>
+                  <span class="tkb">♥<small>92k</small></span>
+                  <span class="tkb">💬<small>1.2k</small></span>
+                  <span class="tkb">✈<small>8k</small></span>
+                  <span class="tk-disc"></span>
+                </div>
+                <div class="tk-foot"><b>@votre.marque</b><p>Le trend du moment 🔥 #fyp #socialmarketing</p><span class="tk-music">♪ son original — votre.marque</span></div>
+              </section>
+
+              <!-- 5 · copie de la 1ère vue (boucle fluide) -->
+              <section class="pslide ig-feed" aria-hidden="true">
+                <div class="igf-top"><b>Instagram</b><span>♡ ✈</span></div>
+                <div class="igf-stories">
+                  <span class="igst new"><i></i>vous</span>
+                  <span class="igst"><i></i>promo</span>
+                  <span class="igst"><i></i>news</span>
+                  <span class="igst"><i></i>avis</span>
+                </div>
+                <div class="igp-head"><span class="p-ava"></span><b>votre.marque</b><small>· Sponsorisé</small></div>
+                <div class="igp-media" style="background-image:url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=500&q=80')"></div>
+                <div class="igp-actions"><span>♥</span><span>💬</span><span>✈</span><b class="save">⤓</b></div>
+                <div class="igp-likes">1 248 j'aime</div>
+                <div class="igp-cap"><b>votre.marque</b> Nouvelle collection ✨</div>
+              </section>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="float-card fc-1" data-depth="0.06"><b>+248%</b><small data-i18n="hero.kpi1">de portée</small></div>
+        <div class="float-card fc-2" data-depth="0.1"><b>3.2M</b><small data-i18n="hero.kpi2">vues / mois</small></div>
+        <div class="float-card fc-3" data-depth="0.05"><b>x5</b><small data-i18n="hero.kpi3">de ROAS</small></div>
+
+        <!-- Social network badges (current logos) -->
+        <span class="sbadge sb-ig" data-depth="0.03" style="--bc:#E4405F" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+        </span>
+        <span class="sbadge sb-tt" data-depth="0.03" style="--bc:#26F4EE" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+        </span>
+        <span class="sbadge sb-yt" data-depth="0.03" style="--bc:#FF0000" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </span>
+        <span class="sbadge sb-x" data-depth="0.03" style="--bc:#1a1a1f" aria-label="X">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+        </span>
+        <span class="sbadge sb-sc" data-depth="0.03" style="--bc:#F7D900" aria-label="Snapchat">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.206.793c.99 0 4.347.276 5.93 3.821.529 1.193.403 3.219.299 4.847l-.003.06c-.012.18-.022.345-.03.51.075.045.203.09.401.09.3-.016.659-.12 1.033-.301.165-.088.344-.104.464-.104.182 0 .359.029.509.09.45.149.734.479.734.838.015.449-.39.839-1.213 1.168-.089.029-.209.075-.344.119-.45.135-1.139.36-1.333.81-.09.224-.061.524.12.868l.015.015c.06.136 1.526 3.475 4.791 4.014.255.044.435.27.42.509 0 .075-.015.149-.045.225-.24.569-1.273.988-3.146 1.271-.059.091-.12.375-.164.57-.029.179-.074.36-.134.553-.076.271-.27.405-.555.405h-.03c-.135 0-.313-.031-.538-.074-.36-.075-.765-.135-1.273-.135-.3 0-.599.015-.913.074-.6.104-1.123.464-1.723.884-.853.599-1.826 1.288-3.294 1.288-.06 0-.119-.015-.18-.015h-.149c-1.468 0-2.427-.675-3.279-1.288-.599-.42-1.107-.779-1.707-.884-.314-.045-.629-.074-.928-.074-.54 0-.958.089-1.272.149-.211.043-.391.074-.54.074-.374 0-.523-.224-.583-.42-.061-.192-.09-.389-.135-.567-.046-.181-.105-.494-.166-.57-1.918-.222-2.95-.642-3.189-1.226-.031-.063-.052-.15-.055-.225-.015-.243.165-.465.42-.509 3.264-.54 4.73-3.879 4.791-4.02l.016-.029c.18-.345.224-.645.119-.869-.195-.434-.884-.658-1.332-.809-.121-.029-.24-.074-.346-.119-1.107-.435-1.257-.93-1.197-1.273.09-.479.674-.793 1.168-.793.146 0 .27.029.383.074.42.194.789.3 1.104.3.234 0 .384-.06.465-.105l-.046-.569c-.098-1.626-.225-3.651.307-4.837C7.392 1.077 10.739.807 11.727.807l.419-.015h.06z"/></svg>
+        </span>
+        <span class="sbadge sb-fb" data-depth="0.03" style="--bc:#0866FF" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+        </span>
+      </div>
+
+      <a href="#services" class="scroll-cue" aria-hidden="true"><span></span></a>
+    </section>
+
+    <!-- PLATFORM LOGO STRIP -->
+    <section class="logos">
+      <p class="logos-label" data-i18n="strip.label">On gère votre présence sur</p>
+      <div class="logos-marquee">
+        <div class="logos-track" id="logosTrack"></div>
+      </div>
+    </section>
+
+    <!-- SERVICES — BENTO -->
+    <section class="section" id="services">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="services.eyebrow">Nos services</span>
+        <h2 data-i18n="services.title">Un studio social complet, <em>sous un seul toit.</em></h2>
+      </div>
+
+      <div class="bento">
+        <div class="bento-col reveal">
+          <article class="b b-img b-ads" style="--img:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80')">
+            <div class="b-overlay"></div>
+            <div class="b-body">
+              <div class="b-head">
+                <span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5l5.5-5.5 3.5 3.5L21 5"/><path d="M15 5h6v6"/></svg></span>
+                <h3 data-i18n="services.c1.t">Gestion des Ads</h3>
+              </div>
+              <p data-i18n="services.c1.d">Campagnes Meta &amp; TikTok Ads : ciblage, créatives, A/B testing et scaling pour maximiser votre ROAS.</p>
+            </div>
+          </article>
+          <article class="b b-img b-cm" style="--img:url('https://images.unsplash.com/photo-1611926653458-09294b3142bf?auto=format&fit=crop&w=900&q=80')">
+            <div class="b-overlay"></div>
+            <div class="b-body">
+              <div class="b-head">
+                <span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11.5a7.5 7.5 0 0 1-10.8 6.7L4 19.5l1.3-3.9A7.5 7.5 0 1 1 20 11.5z"/><path d="M8.5 11.5h.01M12 11.5h.01M15.5 11.5h.01"/></svg></span>
+                <h3 data-i18n="services.c3.t">Community management</h3>
+              </div>
+              <p data-i18n="services.c3.d">Animation, modération, stories permanentes ou quotidiennes pour fédérer votre audience.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="bento-col reveal">
+          <article class="b">
+            <div class="b-head">
+              <span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5L14 10"/><path d="M12.5 8.5l3 3"/><path d="M17.6 3v3.4M15.9 4.7h3.4"/></svg></span>
+              <h3 data-i18n="services.c2.t">Création de contenu</h3>
+            </div>
+            <p data-i18n="services.c2.d">Vidéos, Reels, carrousels et visuels pensés pour arrêter le scroll.</p>
+          </article>
+
+          <article class="b b-stat">
+            <div class="b-statnum"><b class="count" data-target="38">0</b><span class="b-unit">M+</span></div>
+            <p data-i18n="services.stat">de vues générées pour nos clients</p>
+          </article>
+
+          <article class="b">
+            <div class="b-head">
+              <span class="b-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+              <h3 data-i18n="services.c4.t">Stratégie &amp; conseil</h3>
+            </div>
+            <p data-i18n="services.c4.d">Ligne éditoriale, calendrier, analyse de performance et reporting clair.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REEL WALL -->
+    <section class="section reel-section" id="work">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="work.eyebrow">Réalisations</span>
+        <h2 data-i18n="work.title">Du contenu qui <em>arrête le pouce.</em></h2>
+        <p data-i18n="work.sub">Reels, stories et formats verticaux produits pour nos marques.</p>
+      </div>
+
+      <div class="reel-wall">
+        <!-- Reel : images qui défilent automatiquement -->
+        <article class="reel r-tall reveal">
+          <div class="rc">
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=500&q=70')"></span>
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=500&q=70')"></span>
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?auto=format&fit=crop&w=500&q=70')"></span>
+          </div>
+          <span class="reel-tag">REEL</span>
+          <span class="rc-dots"><i></i><i></i><i></i></span>
+          <div class="reel-foot"><b>Lancement produit</b><small>♥ 48k · 3.1M vues</small></div>
+        </article>
+
+        <!-- Carrousel : images qui défilent automatiquement -->
+        <article class="reel reveal">
+          <div class="rc">
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=500&q=70')"></span>
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=500&q=70')"></span>
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?auto=format&fit=crop&w=500&q=70')"></span>
+          </div>
+          <span class="reel-tag">STORY</span>
+          <span class="rc-dots"><i></i><i></i><i></i></span>
+          <div class="reel-foot"><b>Coulisses</b><small>Story quotidienne</small></div>
+        </article>
+
+        <!-- Carrousel -->
+        <article class="reel r-tall reveal">
+          <div class="rc">
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=500&q=70')"></span>
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=70')"></span>
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=500&q=70')"></span>
+          </div>
+          <span class="reel-tag">TIKTOK</span>
+          <span class="rc-dots"><i></i><i></i><i></i></span>
+          <div class="reel-foot"><b>Trend détournée</b><small>♥ 92k · viral</small></div>
+        </article>
+
+        <!-- Carrousel -->
+        <article class="reel reveal">
+          <div class="rc">
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=70')"></span>
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=500&q=70')"></span>
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=500&q=70')"></span>
+          </div>
+          <span class="reel-tag">CARROUSEL</span>
+          <span class="rc-dots"><i></i><i></i><i></i></span>
+          <div class="reel-foot"><b>Éducatif</b><small>Fort taux de sauvegarde</small></div>
+        </article>
+
+        <!-- UGC : images qui défilent automatiquement -->
+        <article class="reel r-tall reveal">
+          <div class="rc">
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=500&q=70')"></span>
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b?auto=format&fit=crop&w=500&q=70')"></span>
+            <span class="rc-img" style="background-image:url('https://images.unsplash.com/photo-1610128114197-485d933885c5?auto=format&fit=crop&w=500&q=70')"></span>
+          </div>
+          <span class="reel-tag">UGC</span>
+          <span class="rc-dots"><i></i><i></i><i></i></span>
+          <div class="reel-foot"><b>Témoignage client</b><small>Authentique &amp; performant</small></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PLATFORMS -->
+    <section class="section" id="platforms">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="platforms.eyebrow">Plateformes</span>
+        <h2 data-i18n="platforms.title">Là où votre audience <em>passe son temps.</em></h2>
+      </div>
+      <div class="platforms">
+        <article class="platform reveal pf-ig">
+          <div class="pf-media"><div class="pf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></div></div>
+          <div class="pf-body"><h3>Instagram</h3><p data-i18n="platforms.ig">Feed, Reels, Stories &amp; collaborations — une grille esthétique et engageante.</p></div>
+        </article>
+        <article class="platform reveal pf-tt">
+          <div class="pf-media"><div class="pf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></div></div>
+          <div class="pf-body"><h3>TikTok</h3><p data-i18n="platforms.tt">Du contenu natif et viral, surfant sur les tendances pour exploser votre visibilité.</p></div>
+        </article>
+        <article class="platform reveal pf-fb">
+          <div class="pf-media"><div class="pf-logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg></div></div>
+          <div class="pf-body"><h3>Facebook</h3><p data-i18n="platforms.fb">Communauté, publicités performantes et présence locale pour toucher tous les âges.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SHOWREEL SPLIT -->
+    <section class="section showcase">
+      <div class="showcase-media reveal">
+        <video autoplay muted loop playsinline
+          poster="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=900&q=80">
+          <source src="https://test-videos.co.uk/vids/bigbuckbunny/mp4/h264/720/Big_Buck_Bunny_720_10s_5MB.mp4" type="video/mp4" />
+        </video>
+        <span class="showcase-live">EN DIRECT</span>
+      </div>
+      <div class="showcase-copy reveal">
+        <span class="eyebrow" data-i18n="showcase.eyebrow">Étude de cas</span>
+        <h2 data-i18n="showcase.title">De 0 à 1M de vues en 90 jours.</h2>
+        <p data-i18n="showcase.sub">Stratégie de contenu vertical, série de Reels et campagne d'amplification : on a transformé une marque confidentielle en référence de sa niche.</p>
+        <div class="showcase-kpis">
+          <div class="sk"><div class="sk-n"><b class="count" data-target="1">0</b><span>M+</span></div><small data-i18n="showcase.k1">vues organiques</small></div>
+          <div class="sk"><div class="sk-n"><b class="count" data-target="62">0</b><span>k</span></div><small data-i18n="showcase.k2">nouveaux abonnés</small></div>
+          <div class="sk"><div class="sk-n"><b class="count" data-target="5">0</b><span>x</span></div><small data-i18n="showcase.k3">de ROAS</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT FORMATS -->
+    <section class="section" id="content">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="content.eyebrow">Formats</span>
+        <h2 data-i18n="content.title">Chaque format a un rôle. <em>On les maîtrise tous.</em></h2>
+      </div>
+      <div class="formats">
+        <article class="fmt reveal" style="--img:url('https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=400&q=70')"><div class="fmt-media"></div><div class="fmt-txt"><span class="fmt-n">01</span><h3 data-i18n="content.reel.t">Reels &amp; vidéos</h3><p data-i18n="content.reel.d">Le format reine pour la viralité et la portée organique.</p></div></article>
+        <article class="fmt reveal" style="--img:url('https://images.unsplash.com/photo-1598128558393-70ff21433be0?auto=format&fit=crop&w=400&q=70')"><div class="fmt-media"></div><div class="fmt-txt"><span class="fmt-n">02</span><h3 data-i18n="content.story.t">Stories quotidiennes</h3><p data-i18n="content.story.d">Proximité et engagement au jour le jour : sondages, questions, coulisses.</p></div></article>
+        <article class="fmt reveal" style="--img:url('https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=400&q=70')"><div class="fmt-media"></div><div class="fmt-txt"><span class="fmt-n">03</span><h3 data-i18n="content.perm.t">Stories permanentes</h3><p data-i18n="content.perm.d">Mises en avant : offres, avis, FAQ — toujours visibles sur le profil.</p></div></article>
+        <article class="fmt reveal" style="--img:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=70')"><div class="fmt-media"></div><div class="fmt-txt"><span class="fmt-n">04</span><h3 data-i18n="content.caro.t">Carrousels</h3><p data-i18n="content.caro.d">Éduquer, raconter et générer de la sauvegarde &amp; du partage.</p></div></article>
+        <article class="fmt reveal" style="--img:url('https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=400&q=70')"><div class="fmt-media"></div><div class="fmt-txt"><span class="fmt-n">05</span><h3 data-i18n="content.post.t">Posts &amp; visuels</h3><p data-i18n="content.post.d">Une identité visuelle cohérente à chaque publication.</p></div></article>
+        <article class="fmt reveal" style="--img:url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=400&q=70')"><div class="fmt-media"></div><div class="fmt-txt"><span class="fmt-n">06</span><h3 data-i18n="content.ugc.t">UGC &amp; tournage</h3><p data-i18n="content.ugc.d">Du contenu authentique, créé pour convertir.</p></div></article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section" id="testimonials">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="testi.eyebrow">Ils nous font confiance</span>
+        <h2 data-i18n="testi.title">Des marques qui ont fait <em>le grand saut.</em></h2>
+      </div>
+      <div class="testi-viewport reveal">
+        <div class="testi-track" id="testiTrack">
+          <blockquote class="testi"><p data-i18n="testi.q1">« En 3 mois, nos Reels ont dépassé le million de vues et nos ventes ont doublé. »</p><footer><span class="t-avatar"></span><div><b>Sarah M.</b><small data-i18n="testi.r1">Fondatrice, marque cosmétique</small></div></footer></blockquote>
+          <blockquote class="testi"><p data-i18n="testi.q2">« Une équipe qui comprend les tendances TikTok mieux que personne. Un vrai partenaire. »</p><footer><span class="t-avatar"></span><div><b>Karim B.</b><small data-i18n="testi.r2">CEO, restaurant &amp; franchise</small></div></footer></blockquote>
+          <blockquote class="testi"><p data-i18n="testi.q3">« Nos campagnes Meta n'ont jamais été aussi rentables. ROAS x5 dès le premier mois. »</p><footer><span class="t-avatar"></span><div><b>Léa D.</b><small data-i18n="testi.r3">Directrice marketing, e-commerce</small></div></footer></blockquote>
+          <blockquote class="testi"><p data-i18n="testi.q4">« Notre Instagram est passé de 2k à 30k abonnés engagés en 6 mois. »</p><footer><span class="t-avatar"></span><div><b>Inès R.</b><small data-i18n="testi.r4">Gérante, boutique mode</small></div></footer></blockquote>
+          <blockquote class="testi"><p data-i18n="testi.q5">« Des contenus créatifs livrés à temps, toujours dans notre ligne éditoriale. »</p><footer><span class="t-avatar"></span><div><b>Thomas G.</b><small data-i18n="testi.r5">Responsable comm', startup</small></div></footer></blockquote>
+          <blockquote class="testi"><p data-i18n="testi.q6">« Le ROI est enfin mesurable. Reporting clair et résultats au rendez-vous. »</p><footer><span class="t-avatar"></span><div><b>Naïla F.</b><small data-i18n="testi.r6">Directrice, agence immobilière</small></div></footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section" id="pricing">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="pricing.eyebrow">Nos offres</span>
+        <h2 data-i18n="pricing.title">Des formules adaptées à <em>votre ambition.</em></h2>
+      </div>
+      <div class="plans">
+        <article class="plan reveal">
+          <h3 data-i18n="pricing.p1.t">Essentiel</h3>
+          <div class="price"><b data-i18n="pricing.p1.price">690€</b><span data-i18n="pricing.permonth">/ mois</span></div>
+          <ul>
+            <li data-i18n="pricing.p1.f1">12 publications / mois</li>
+            <li data-i18n="pricing.p1.f2">Stories quotidiennes</li>
+            <li data-i18n="pricing.p1.f3">1 plateforme</li>
+            <li data-i18n="pricing.p1.f4">Reporting mensuel</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost full" data-i18n="pricing.choose">Choisir</a>
+        </article>
+        <article class="plan featured reveal">
+          <span class="plan-badge" data-i18n="pricing.popular">Le plus choisi</span>
+          <h3 data-i18n="pricing.p2.t">Croissance</h3>
+          <div class="price"><b data-i18n="pricing.p2.price">1490€</b><span data-i18n="pricing.permonth">/ mois</span></div>
+          <ul>
+            <li data-i18n="pricing.p2.f1">20 publications + 8 Reels</li>
+            <li data-i18n="pricing.p2.f2">Gestion des ads incluse</li>
+            <li data-i18n="pricing.p2.f3">2 plateformes</li>
+            <li data-i18n="pricing.p2.f4">Community management</li>
+            <li data-i18n="pricing.p2.f5">Reporting bimensuel</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary full" data-i18n="pricing.choose">Choisir</a>
+        </article>
+        <article class="plan reveal">
+          <h3 data-i18n="pricing.p3.t">Sur-mesure</h3>
+          <div class="price"><b data-i18n="pricing.p3.price">Sur devis</b></div>
+          <ul>
+            <li data-i18n="pricing.p3.f1">Contenu illimité</li>
+            <li data-i18n="pricing.p3.f2">Budget ads dédié</li>
+            <li data-i18n="pricing.p3.f3">Toutes les plateformes</li>
+            <li data-i18n="pricing.p3.f4">Tournage &amp; UGC</li>
+            <li data-i18n="pricing.p3.f5">Chef de projet dédié</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost full" data-i18n="pricing.contact">Nous contacter</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-final" id="contact">
+      <div class="cta-box reveal">
+        <h2 data-i18n="contact.title">Prêt à faire vibrer votre marque ?</h2>
+        <p data-i18n="contact.sub">Parlons de vos objectifs. On vous prépare une stratégie social media offerte sous 48h.</p>
+        <form class="contact-form" id="contactForm" novalidate>
+          <input type="text" name="name" data-i18n-ph="contact.name" placeholder="Votre nom" required />
+          <input type="email" name="email" data-i18n-ph="contact.email" placeholder="Votre email" required />
+          <input type="text" name="brand" data-i18n-ph="contact.brand" placeholder="Votre marque / réseau" />
+          <button type="submit" class="btn btn-primary magnetic" data-i18n="contact.send">Recevoir ma stratégie</button>
+        </form>
+        <p class="form-msg" id="formMsg" hidden data-i18n="contact.thanks">Merci ! On vous recontacte très vite. 🚀</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="brand">
+        <svg class="brand-logo" viewBox="0 0 72 72" aria-hidden="true">
+          <rect x="4" y="4" width="64" height="64" rx="18" fill="#f4ece3"/>
+          <circle cx="15" cy="15" r="1.9" fill="#e88a72"/><circle cx="57" cy="15" r="1.9" fill="#e88a72"/>
+          <circle cx="15" cy="57" r="1.9" fill="#e88a72"/><circle cx="57" cy="57" r="1.9" fill="#e88a72"/>
+          <text x="24" y="46" font-family="Sora,sans-serif" font-weight="700" font-size="27" fill="#4a3f36" text-anchor="middle">N</text>
+          <line x1="36" y1="24" x2="36" y2="50" stroke="#c9a07d" stroke-width="1"/>
+          <text x="48" y="46" font-family="Sora,sans-serif" font-weight="700" font-size="27" fill="#4a3f36" text-anchor="middle">H</text>
+        </svg>
+        <span class="brand-name">NH Social Media</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer.rights">© 2026 NH Social Media. Tous droits réservés.</span>
+      <div class="socials">
+        <a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>Instagram</a>
+        <a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>TikTok</a>
+        <a href="#"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
