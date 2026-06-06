@@ -76,19 +76,14 @@ section{position:relative;z-index:1}
 .pill{display:inline-block;padding:8px 16px;border-radius:999px;background:var(--card);border:1px solid var(--stroke);color:var(--muted);font-size:.82rem;font-weight:600;margin-bottom:24px}
 .hero-title{font-size:clamp(2.1rem,4.3vw,3.7rem);font-weight:800;line-height:1.08}
 .hero-title span{display:block;white-space:nowrap}
-/* "votre marque" — handwriting effect, letter by letter, brand gradient outline */
-.tl-mark{display:block}
-.tl-mark .ol-l{display:inline-block;color:transparent;white-space:pre;
+/* "votre marque" — bigger, handwriting effect, brand gradient outline, font cycles per rewrite */
+.tl-mark{display:block;font-size:1.18em;line-height:1.2;letter-spacing:normal;margin:.04em 0;
+  transform:scale(var(--mscale,1));transform-origin:left center}
+.tl-mark .ol-l{display:inline-block;color:transparent;white-space:pre;line-height:1.2;
   -webkit-text-stroke:1.6px var(--c,#b08e74);
-  animation:handwrite 7s ease-in-out infinite;
-  animation-delay:calc(var(--i,0)*.16s)}
-@keyframes handwrite{
-  0%{clip-path:inset(0 100% 0 0);opacity:0}
-  4%{opacity:1}
-  14%{clip-path:inset(0 -.14em 0 0)}
-  86%{clip-path:inset(0 -.14em 0 0);opacity:1}
-  96%,100%{clip-path:inset(0 -.14em 0 0);opacity:0}
-}
+  clip-path:inset(-.16em 100% -.26em 0);opacity:.1;
+  -webkit-transition:clip-path .12s ease,opacity .12s ease;transition:clip-path .12s ease,opacity .12s ease}
+.tl-mark .ol-l.on{clip-path:inset(-.16em -.14em -.26em 0);opacity:1}
 .gradient-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:shine 6s linear infinite}
 @keyframes shine{to{background-position:200% center}}
 .hero-sub{color:var(--muted);font-size:1.12rem;max-width:520px;margin:24px 0 32px;text-wrap:pretty}
@@ -471,7 +466,7 @@ section{position:relative;z-index:1}
     padding-top:clamp(20px,5vw,36px);padding-bottom:clamp(26px,6vw,42px)}
   .hero-copy{position:relative;z-index:2;max-width:66%}
   .hero-title{font-size:clamp(1.75rem,7.2vw,2.8rem);line-height:1.08}
-  .hero-title .tl-mark{white-space:nowrap}
+  .hero-title .tl-mark{white-space:nowrap;font-size:1.04em}
   .hero-sub{font-size:.94rem;margin:13px 0 20px;max-width:none}
   .hero-cta{flex-direction:column;align-items:stretch;gap:9px}
   .hero-cta .btn{width:100%;padding:12px 18px;font-size:.88rem}

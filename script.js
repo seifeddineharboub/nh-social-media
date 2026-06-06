@@ -140,6 +140,7 @@ function brandGradColor(t){
   const seg=(t-a[3])/(b[3]-a[3]);
   return `rgb(${Math.round(a[0]+(b[0]-a[0])*seg)},${Math.round(a[1]+(b[1]-a[1])*seg)},${Math.round(a[2]+(b[2]-a[2])*seg)})`;
 }
+let markGen = 0;
 function splitMark(){
   const el = document.querySelector(".tl-mark");
   if(!el) return;
@@ -154,6 +155,35 @@ function splitMark(){
     s.textContent = ch === " " ? " " : ch;
     el.appendChild(s);
   });
+  markGen++;
+  runMark(markGen);
+}
+
+// JS-driven sequential typewriter for "votre marque":
+// a letter is fully written before the next starts; the word holds, then fully erases,
+// and only once empty does the next font start writing (each rewrite = a new brand font).
+function runMark(gen){
+  const el = document.querySelector(".tl-mark");
+  if(!el) return;
+  const letters = [...el.children];
+  const n = letters.length;
+  if(!n) return;
+  if(matchMedia("(prefers-reduced-motion:reduce)").matches){ letters.forEach(L=>L.classList.add("on")); return; }
+  const MARK = [{f:"'Sora',sans-serif",s:1},{f:"'Playfair Display',serif",s:1},{f:"'Caveat',cursive",s:1.16}];
+  const STEP = 135, REVEAL = 130, HOLD = 1100, ERASE = 320;
+  let idx = 0;
+  function cycle(){
+    if(gen !== markGen) return;                         // replaced by a newer word → stop
+    el.style.fontFamily = MARK[idx].f;
+    el.style.setProperty("--mscale", MARK[idx].s);
+    letters.forEach((L,i)=> setTimeout(()=>{ if(gen===markGen) L.classList.add("on"); }, i*STEP));
+    setTimeout(()=>{                                    // word fully written + held → erase it
+      if(gen !== markGen) return;
+      letters.forEach(L=> L.classList.remove("on"));
+      setTimeout(()=>{ if(gen===markGen){ idx=(idx+1)%MARK.length; cycle(); } }, ERASE); // empty → next font
+    }, (n-1)*STEP + REVEAL + HOLD);
+  }
+  cycle();
 }
 document.querySelectorAll(".lang-switch button").forEach(btn=> btn.addEventListener("click", ()=> applyLang(btn.dataset.lang)));
 (function initLang(){
