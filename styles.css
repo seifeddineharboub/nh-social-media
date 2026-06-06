@@ -362,7 +362,7 @@ section{position:relative;z-index:1}
 @keyframes testiScroll{to{transform:translateX(-50%)}}
 .testi{flex:0 0 var(--testi-w,340px);box-sizing:border-box;background:var(--card);border:1px solid var(--stroke);border-radius:var(--radius);padding:28px;transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column}
 .testi:hover{transform:translateY(-6px)}
-.testi p{font-size:1.02rem;margin-bottom:20px;flex:1}
+.testi p{font-size:1.02rem;margin-bottom:20px;flex:1;font-style:italic;color:#4a3b30}
 .testi footer{display:flex;align-items:center;gap:12px}
 .testi footer b{display:block;line-height:1.25;font-size:.95rem}
 .testi footer small{display:block;color:var(--muted);font-size:.8rem}
