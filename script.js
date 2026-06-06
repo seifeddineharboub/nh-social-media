@@ -7,7 +7,7 @@ const I18N = {
     "hero.pill":"✦ Agence Social Marketing 360°",
     "hero.title1":"On transforme","hero.title2":"votre marque","hero.title3":"en phénomène social.",
     "hero.sub":"Ads, création de contenu &amp; community management sur Instagram, TikTok et Facebook. Des Reels qui captivent, des campagnes qui convertissent.",
-    "hero.cta1":"Lancer ma croissance","hero.cta2":"▶ Voir le showreel",
+    "hero.cta1":"Lancer ma croissance","hero.cta2":"Voir le showreel",
     "hero.trust":"+120 marques · 4,9/5 de satisfaction",
     "hero.kpi1":"de portée","hero.kpi2":"vues / mois","hero.kpi3":"de ROAS",
 
@@ -64,7 +64,7 @@ const I18N = {
     "hero.pill":"✦ 360° Social Marketing Agency",
     "hero.title1":"We turn","hero.title2":"your brand","hero.title3":"into a social phenomenon.",
     "hero.sub":"Ads, content creation &amp; community management on Instagram, TikTok and Facebook. Reels that captivate, campaigns that convert.",
-    "hero.cta1":"Grow my brand","hero.cta2":"▶ Watch the showreel",
+    "hero.cta1":"Grow my brand","hero.cta2":"Watch the showreel",
     "hero.trust":"120+ brands · 4.9/5 satisfaction",
     "hero.kpi1":"reach","hero.kpi2":"views / month","hero.kpi3":"ROAS",
 
